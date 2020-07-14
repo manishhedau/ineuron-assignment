@@ -1,10 +1,21 @@
-# Question - 1
-# for i in range(9):
-#     for j in range(5):
-#         if i == j:
-#             print('*'*(j))
-#         # print()
-#     print()
+# 1. Create the below pattern using nested for loop in Python.
+"""
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * *
+* * *
+* *
+*
 
-for i in range(5):
-    print((chr(65+i)+' ')*5)
+"""
+
+m = int(input('Enter the number of columns : '))
+for i in range(1):
+    for j in range(m):
+        print('* '*j)
+    for k in range(m):
+        print('* '*(m-k-2))
+    print()
